@@ -65,7 +65,8 @@ write_dta(data_clean_hh, file.path(data_path, "Intermediate/TZA_CCT_HH.dta"))
 data_tidy_mem <- data_dedup %>%
     select(vid, hhid, enid, starts_with("gender"), starts_with("age"), starts_with("read"),
            starts_with("clinic_visit"), starts_with("sick"), starts_with("days_sick"),
-           starts_with("treat_fin"), starts_with("ill_impact"), starts_with("days_impact")) %>%
+           starts_with("treat_fin"), starts_with("ill_impact"), starts_with("days_impact"),
+           starts_with("treat_cost")) %>%
     pivot_longer(cols = -c(vid, hhid, enid),  # Keep IDs static
                  names_to = c(".value", "member"),
                  names_pattern = "(.*)_(\\d+)")  # Capture the variable and the suffix
