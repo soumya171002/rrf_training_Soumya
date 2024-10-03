@@ -55,7 +55,7 @@ balance_table <- datasummary_balance(
     stars = TRUE,
     title = "Balance by Treatment Status",
     note = "Includes HHS with observations for baseline and endline",
-    output = file.path("Outputs", "balance_table.csv")  # Change to CSV
+    output = file.path("Outputs", "balance_table.tex")  # Change to tex
 )
 
 
