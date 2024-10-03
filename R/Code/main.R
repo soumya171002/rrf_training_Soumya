@@ -14,15 +14,25 @@ library(ggplot2) #graphs
 library(tidyverse) # working with tidy data
 library(modelsummary) # creating summary tables
 library(stargazer) # writing nice tables
-library(RColorBrewer) # color palettes
+library(RColorBrewer)# color palettes
+library(estimatr)
 
-# Set data path ----
+# Recover environment ----
+# new users need to restore the env. by doing 
+# you only need to do this the first time you interact with the project 
+# renv::restore()
+data_path <- "C:\\Users\\sagrawal9\\Downloads\\DataWork\\Data"
+
+data <- read_dta(file.path(data_path, "Raw/TZA_CCT_baseline.dta"))
 
 # this is the second root of the project, the first root is the code whose directory 
 # is already being handled by the rstudio project.
 
-data_path <- "the path for your data"
+
 
 # Run the R scripts ----
 
-source("the path of your scripts")
+source("Code/01-processing-data.R")
+source("Code/02-constructing-data.R")
+source("Code/03-analyzing-data.R")
+

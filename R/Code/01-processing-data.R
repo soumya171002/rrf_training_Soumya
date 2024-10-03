@@ -1,18 +1,9 @@
 # Reproducible Research Fundamentals 
 # 01. Data processing
 
-### Libraries
-library(haven)
-library(dplyr)
-library(tidyr)
-library(stringr)
-library(labelled)
 
-### Loading data ----
-
-# Load the dataset
 data_path <- "C:\\Users\\sagrawal9\\Downloads\\DataWork\\Data"
-data      <- read_dta(file.path(data_path, "Raw/TZA_CCT_baseline.dta"))
+
 
 # Data exploration
 View(data)
