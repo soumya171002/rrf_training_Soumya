@@ -5,7 +5,7 @@ caption={Balance by Treatment Status},
 note{}={Includes HHS with observations for baseline and endline},
 ]                     %% tabularray outer close
 {                     %% tabularray inner open
-colspec={Q[]Q[]Q[]Q[]Q[]},
+colspec={Q[]Q[]Q[]Q[]Q[]Q[]Q[]},
 cell{1}{2}={c=2,}{halign=c,},
 cell{1}{4}={c=2,}{halign=c,},
 column{1}={halign=l,},
@@ -13,16 +13,18 @@ column{2}={halign=r,},
 column{3}={halign=r,},
 column{4}={halign=r,},
 column{5}={halign=r,},
+column{6}={halign=r,},
+column{7}={halign=r,},
 row{1}={halign=c,},
 }                     %% tabularray inner close
 \toprule
-& 0 &  & 1 &  \\ \cmidrule[lr]{2-3}\cmidrule[lr]{4-5}
-& Mean & Std. Dev. & Mean & Std. Dev. \\ \midrule %% TinyTableHeader
-HH size                            & \num{4.0} & \num{2.7} & \num{4.0} & \num{2.5} \\
-N children <= 5                    & \num{0.5} & \num{0.8} & \num{0.5} & \num{0.8} \\
-N of elderly (>60)                 & \num{1.3} & \num{0.7} & \num{1.2} & \num{0.7} \\
-Any member can read                & \num{0.5} & \num{0.5} & \num{0.5} & \num{0.5} \\
-Any member was sick in last 4 days & \num{0.4} & \num{0.5} & \num{0.4} & \num{0.5} \\
+& 0 &  & 1 &  &  &  \\ \cmidrule[lr]{2-3}\cmidrule[lr]{4-5}
+& Mean & Std. Dev. & Mean & Std. Dev. & Diff. in Means & Std. Error \\ \midrule %% TinyTableHeader
+HH size                            & \num{4.0} & \num{2.7} & \num{4.0} & \num{2.5} & \num{0.0}     & \num{0.1} \\
+N children <= 5                    & \num{0.5} & \num{0.8} & \num{0.5} & \num{0.8} & \num{0.0}     & \num{0.0} \\
+N of elderly (>60)                 & \num{1.3} & \num{0.7} & \num{1.2} & \num{0.7} & \num{-0.1}*** & \num{0.0} \\
+Any member can read                & \num{0.5} & \num{0.5} & \num{0.5} & \num{0.5} & \num{0.0}     & \num{0.0} \\
+Any member was sick in last 4 days & \num{0.4} & \num{0.5} & \num{0.4} & \num{0.5} & \num{0.0}     & \num{0.0} \\
 \bottomrule
 \end{talltblr}
 \end{table}

@@ -1,14 +1,12 @@
 # Reproducible Research Fundamentals 2024 - R
 
-Welcome to the **Reproducible Research Fundamentals 2024** training repository. This repository will guide you through all the exercises across the following stages:
+The reproducibility package replicates the datasets provided by the DIME Analytics team.The datasets is from openstreet map. 
 
-- **0. GitHub Workflow**: Gain essential GitHub skills, including how to create branches, commit changes, and open pull requests.
-- **1. Data Processing**: Learn to clean and tidy your datasets in preparation for analysis.
-- **2. Data Construction**: Build indicators and variables from the processed data.
-- **3. Data Analysis**: Conduct analyses using the constructed data.
-- **4. Reproducibility Package**: Package all work into a reproducible format for sharing and validation.
+# Steps to run the code 
+1. open the .Rproj
+2. From the .Rproj open the main.R
+3. You need to recover the environemnt by running `renv::restore()` and follow the prompts that will appear.
+4. Change the data_path in main.R once 
+5. Run the main.R
 
-Feel free to update this README as you progress through the sessions and customize it to reflect the details of your project. For more details on the elements required for a reproducibility package, refer to our [README template](https://github.com/worldbank/wb-reproducible-research-repository/blob/main/resources/README_Template.md), which you will cover in the **Reproducibility Package** session.
-
-Remember this is what you will share with your peer at the end of the training for review so this needs to be updated before sharing. 
 
